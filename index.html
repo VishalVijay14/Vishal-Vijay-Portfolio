@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishal Vijay — CS & Applied Math @ Berkeley</title>
+    <meta name="description" content="Vishal Vijay — Computer Science and Applied Mathematics student at UC Berkeley. Software engineering, ML research, and quantitative work.">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=JetBrains+Mono:wght@300;400;500&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background grid overlay -->
+    <div class="grid-overlay" aria-hidden="true"></div>
+    <div class="noise-overlay" aria-hidden="true"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="#top" class="nav-logo">
+                <span class="logo-bracket">[</span>VV<span class="logo-bracket">]</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about" data-section="about">about</a></li>
+                <li><a href="#experience" data-section="experience">experience</a></li>
+                <li><a href="#projects" data-section="projects">projects</a></li>
+                <li><a href="#contact" data-section="contact">contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="top">
+        <div class="hero-inner">
+            <div class="hero-meta reveal">
+                <span class="meta-dot"></span>
+                <span class="meta-text">Berkeley, CA · Available May 2026</span>
+            </div>
+
+            <h1 class="hero-name reveal" style="--delay: 0.1s">
+                Vishal <span class="italic">Vijay</span>
+            </h1>
+
+            <p class="hero-tagline reveal" style="--delay: 0.2s">
+                Computer Science &amp; Applied Mathematics at
+                <span class="accent">UC Berkeley</span>.
+                Building at the intersection of
+                <span class="accent">software</span>,
+                <span class="accent">machine learning</span>, and
+                <span class="accent">quantitative research</span>.
+            </p>
+
+            <div class="hero-links reveal" style="--delay: 0.3s">
+                <a href="mailto:vishvj04@berkeley.edu" class="hero-link">
+                    <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect x="3" y="5" width="18" height="14" rx="2"/>
+                        <path d="m3 7 9 6 9-6"/>
+                    </svg>
+                    <span class="link-label">email</span>
+                    <span class="link-arrow">→</span>
+                </a>
+                <a href="https://www.linkedin.com/in/vishal-vijay-10541919a/" target="_blank" rel="noopener" class="hero-link">
+                    <svg class="link-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.268 2.37 4.268 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.063 2.063 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                    <span class="link-label">linkedin</span>
+                    <span class="link-arrow">→</span>
+                </a>
+                <a href="https://github.com/VishalVijay14" target="_blank" rel="noopener" class="hero-link">
+                    <svg class="link-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                    </svg>
+                    <span class="link-label">github</span>
+                    <span class="link-arrow">→</span>
+                </a>
+            </div>
+
+            <div class="hero-scroll reveal" style="--delay: 0.5s">
+                <span class="scroll-text">scroll</span>
+                <span class="scroll-line"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Placeholder sections so scroll navigation works; we'll build these next -->
+    <section class="section" id="about">
+        <div class="section-inner">
+            <div class="section-label reveal">
+                <span class="label-index">01</span>
+                <span class="label-text">about</span>
+            </div>
+
+            <div class="about-grid">
+                <!-- Left: Headshot -->
+                <div class="about-portrait reveal">
+                    <div class="portrait-frame">
+                        <!-- Replace this div with: <img src="assets/headshot.jpg" alt="Vishal Vijay"> -->
+                        <div class="portrait-placeholder">
+                            <span class="portrait-initials">VV</span>
+                            <span class="portrait-hint">drop headshot.jpg<br>in /assets</span>
+                        </div>
+                    </div>
+                    <div class="portrait-caption">
+                        <span class="caption-line"></span>
+                        <span class="caption-text">Vishal Vijay / 2026</span>
+                    </div>
+                </div>
+
+                <!-- Right: Bio + interactive stats -->
+                <div class="about-content">
+                    <p class="about-bio reveal" style="--delay: 0.1s">
+                        I'm a senior at <span class="accent">UC Berkeley</span>
+                        studying Computer Science and Applied Mathematics,
+                        graduating <span class="accent">May 2026</span>.
+                    </p>
+
+                    <p class="about-bio reveal" style="--delay: 0.2s">
+                        My work sits at the intersection of
+                        software engineering, machine learning, and
+                        quantitative research &mdash; from building cloud
+                        infrastructure at
+                        <span class="accent italic">IBM</span> and
+                        <span class="accent italic">PG&amp;E</span>, to
+                        developing post-quantum cryptography systems at
+                        <span class="accent italic">ISARA</span>, to
+                        publishing ecological ML models with
+                        <span class="accent italic">UNC Greensboro</span>.
+                    </p>
+
+                    <p class="about-bio reveal" style="--delay: 0.3s">
+                        Currently exploring LLM evaluation as a
+                        Handshake MOVE AI Fellow, and running an independent
+                        equity research portfolio on the side.
+                    </p>
+
+                    <!-- Interactive stats block -->
+                    <div class="stats-block reveal" style="--delay: 0.4s">
+                        <div class="stats-header">
+                            <span class="stats-dot"></span>
+                            <span class="stats-title">vishal.profile</span>
+                            <span class="stats-dots">
+                                <i></i><i></i><i></i>
+                            </span>
+                        </div>
+                        <ul class="stats-list">
+                            <li class="stat-row" data-key="location">
+                                <span class="stat-key">location</span>
+                                <span class="stat-arrow">→</span>
+                                <span class="stat-val">Berkeley, CA</span>
+                            </li>
+                            <li class="stat-row" data-key="education">
+                                <span class="stat-key">education</span>
+                                <span class="stat-arrow">→</span>
+                                <span class="stat-val">B.S. CS &amp; Applied Math, UC Berkeley</span>
+                            </li>
+                            <li class="stat-row" data-key="graduation">
+                                <span class="stat-key">graduation</span>
+                                <span class="stat-arrow">→</span>
+                                <span class="stat-val">May 2026</span>
+                            </li>
+                            <li class="stat-row" data-key="focus">
+                                <span class="stat-key">focus</span>
+                                <span class="stat-arrow">→</span>
+                                <span class="stat-val">SWE &middot; ML &middot; Quant Research</span>
+                            </li>
+                            <li class="stat-row" data-key="stack">
+                                <span class="stat-key">stack</span>
+                                <span class="stat-arrow">→</span>
+                                <span class="stat-val">Python, Go, TypeScript, PyTorch, AWS, K8s</span>
+                            </li>
+                            <li class="stat-row" data-key="status">
+                                <span class="stat-key">status</span>
+                                <span class="stat-arrow">→</span>
+                                <span class="stat-val"><span class="status-pulse"></span>open to 2026 new-grad roles</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="experience">
+        <div class="section-inner">
+            <div class="section-label reveal">
+                <span class="label-index">02</span>
+                <span class="label-text">experience</span>
+                <span class="label-hint">click any card to expand</span>
+            </div>
+
+            <ol class="timeline">
+
+                <!-- Handshake MOVE AI Fellow -->
+                <li class="exp-card reveal" data-expandable>
+                    <div class="exp-dot"></div>
+                    <button class="exp-header" aria-expanded="false">
+                        <div class="exp-logo logo-handshake">
+                            <img src="assets/handshake-logo.png" alt="Handshake">
+                        </div>
+                        <div class="exp-heading">
+                            <div class="exp-top">
+                                <h3 class="exp-role">MOVE AI Fellow</h3>
+                                <span class="exp-date">Sep 2025 — Present</span>
+                            </div>
+                            <div class="exp-bottom">
+                                <span class="exp-company">Handshake</span>
+                                <span class="exp-sep">·</span>
+                                <span class="exp-location">Remote</span>
+                            </div>
+                        </div>
+                        <span class="exp-chevron" aria-hidden="true">+</span>
+                    </button>
+                    <div class="exp-body">
+                        <p class="exp-summary">
+                            Collaborating with leading researchers to refine LLM
+                            capabilities through testing, evaluation, and contextual
+                            improvements to AI systems.
+                        </p>
+                        <ul class="exp-bullets">
+                            <li>Conducting structured evaluations to benchmark LLM performance across domain-specific tasks.</li>
+                            <li>Contributing to dataset curation and model feedback loops used in downstream fine-tuning.</li>
+                        </ul>
+                        <div class="exp-tags">
+                            <span class="tag">LLM Evaluation</span>
+                            <span class="tag">Prompt Engineering</span>
+                            <span class="tag">AI Research</span>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Investment Research Analyst -->
+                <li class="exp-card reveal" data-expandable>
+                    <div class="exp-dot"></div>
+                    <button class="exp-header" aria-expanded="false">
+                        <div class="exp-logo logo-text">
+                            <span class="logo-glyph">$</span>
+                        </div>
+                        <div class="exp-heading">
+                            <div class="exp-top">
+                                <h3 class="exp-role">Investment Research Analyst</h3>
+                                <span class="exp-date">Aug 2025 — Present</span>
+                            </div>
+                            <div class="exp-bottom">
+                                <span class="exp-company">Independent</span>
+                                <span class="exp-sep">·</span>
+                                <span class="exp-location">Berkeley, CA</span>
+                            </div>
+                        </div>
+                        <span class="exp-chevron" aria-hidden="true">+</span>
+                    </button>
+                    <div class="exp-body">
+                        <p class="exp-summary">
+                            Managing an independent equity portfolio using
+                            fundamental analysis and AI-augmented research workflows.
+                        </p>
+                        <ul class="exp-bullets">
+                            <li>Running a $25K portfolio generating +15% annualized return, outperforming the S&amp;P 500 by 5%+.</li>
+                            <li>Built valuation models and sector analyses across 15+ companies, driving strategic rebalancing.</li>
+                            <li>Integrated AI analytics (Perplexity Finance) to streamline screening and improve forecast accuracy by 20%.</li>
+                        </ul>
+                        <div class="exp-tags">
+                            <span class="tag">Equity Research</span>
+                            <span class="tag">Valuation</span>
+                            <span class="tag">AI Analytics</span>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- UNC Greensboro -->
+                <li class="exp-card reveal" data-expandable>
+                    <div class="exp-dot"></div>
+                    <button class="exp-header" aria-expanded="false">
+                        <div class="exp-logo logo-unc">
+                            <img src="assets/unc-greensboro-logo.png" alt="UNC Greensboro">
+                        </div>
+                        <div class="exp-heading">
+                            <div class="exp-top">
+                                <h3 class="exp-role">Undergraduate Research Assistant</h3>
+                                <span class="exp-date">2024 — Present</span>
+                            </div>
+                            <div class="exp-bottom">
+                                <span class="exp-company">UNC Greensboro</span>
+                                <span class="exp-sep">·</span>
+                                <span class="exp-location">Hybrid, NC</span>
+                            </div>
+                        </div>
+                        <span class="exp-chevron" aria-hidden="true">+</span>
+                    </button>
+                    <div class="exp-body">
+                        <p class="exp-summary">
+                            Applying stochastic processes and machine learning to
+                            spatial ecology problems as part of NSF-funded research.
+                        </p>
+                        <ul class="exp-bullets">
+                            <li>Developed mathematical and ML models that improved species survival projections by 15%.</li>
+                            <li>Contributing author on 2+ published papers exploring ecological stochastic processes.</li>
+                        </ul>
+                        <div class="exp-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">PyTorch</span>
+                            <span class="tag">Stochastic Processes</span>
+                            <span class="tag">Research</span>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- IBM -->
+                <li class="exp-card reveal" data-expandable>
+                    <div class="exp-dot"></div>
+                    <button class="exp-header" aria-expanded="false">
+                        <div class="exp-logo logo-invert">
+                            <img src="assets/ibm-logo.png" alt="IBM">
+                        </div>
+                        <div class="exp-heading">
+                            <div class="exp-top">
+                                <h3 class="exp-role">Software Development Intern</h3>
+                                <span class="exp-date">Summer 2025</span>
+                            </div>
+                            <div class="exp-bottom">
+                                <span class="exp-company">IBM</span>
+                                <span class="exp-sep">·</span>
+                                <span class="exp-location">San Jose, CA</span>
+                            </div>
+                        </div>
+                        <span class="exp-chevron" aria-hidden="true">+</span>
+                    </button>
+                    <div class="exp-body">
+                        <p class="exp-summary">
+                            Worked on system reliability, data pipelines, and CI/CD
+                            infrastructure, plus contributions to an AI-driven
+                            security framework.
+                        </p>
+                        <ul class="exp-bullets">
+                            <li>Engineered configurable timeout logic and scalable resource usage in Kubernetes, reducing container crashes by 30%.</li>
+                            <li>Redesigned regex-based YAML parsers, improving cluster-wide parsing speed by 25%.</li>
+                            <li>Built and deployed a Jenkins CI/CD pipeline on Kubernetes, cutting release times by 40%.</li>
+                            <li>Contributed to WatsonX Orchestrate — an AI-driven framework that detects and patches third-party library vulnerabilities.</li>
+                        </ul>
+                        <div class="exp-tags">
+                            <span class="tag">Kubernetes</span>
+                            <span class="tag">Jenkins</span>
+                            <span class="tag">CI/CD</span>
+                            <span class="tag">YAML</span>
+                            <span class="tag">Python</span>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- PG&E -->
+                <li class="exp-card reveal" data-expandable>
+                    <div class="exp-dot"></div>
+                    <button class="exp-header" aria-expanded="false">
+                        <div class="exp-logo logo-invert">
+                            <img src="assets/pge-logo.png" alt="PG&amp;E">
+                        </div>
+                        <div class="exp-heading">
+                            <div class="exp-top">
+                                <h3 class="exp-role">Software Technology Intern</h3>
+                                <span class="exp-date">Summer 2024</span>
+                            </div>
+                            <div class="exp-bottom">
+                                <span class="exp-company">Pacific Gas &amp; Electric</span>
+                                <span class="exp-sep">·</span>
+                                <span class="exp-location">Oakland, CA</span>
+                            </div>
+                        </div>
+                        <span class="exp-chevron" aria-hidden="true">+</span>
+                    </button>
+                    <div class="exp-body">
+                        <p class="exp-summary">
+                            Migrated production infrastructure to Terraform and shipped
+                            50+ APIs powering backend systems for one of California's
+                            largest utilities.
+                        </p>
+                        <ul class="exp-bullets">
+                            <li>Migrated backend infrastructure from CloudFormation to Terraform, reducing deployment errors by 35%.</li>
+                            <li>Designed and deployed 50+ production APIs on AWS, improving system uptime to 99.8% and cutting integration time by 40%.</li>
+                            <li>Implemented monitoring via MuleSoft for proactive failure detection and resolution.</li>
+                        </ul>
+                        <div class="exp-tags">
+                            <span class="tag">AWS</span>
+                            <span class="tag">Terraform</span>
+                            <span class="tag">MuleSoft</span>
+                            <span class="tag">REST APIs</span>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- ISARA -->
+                <li class="exp-card reveal" data-expandable>
+                    <div class="exp-dot"></div>
+                    <button class="exp-header" aria-expanded="false">
+                        <div class="exp-logo logo-invert">
+                            <img src="assets/isara-corp-logo.png" alt="ISARA Corporation">
+                        </div>
+                        <div class="exp-heading">
+                            <div class="exp-top">
+                                <h3 class="exp-role">Software Engineer Intern</h3>
+                                <span class="exp-date">2023 — 2024</span>
+                            </div>
+                            <div class="exp-bottom">
+                                <span class="exp-company">ISARA Corporation</span>
+                                <span class="exp-sep">·</span>
+                                <span class="exp-location">Remote</span>
+                            </div>
+                        </div>
+                        <span class="exp-chevron" aria-hidden="true">+</span>
+                    </button>
+                    <div class="exp-body">
+                        <p class="exp-summary">
+                            Built backend services and APIs for post-quantum
+                            cryptography tooling used in enterprise PKI deployments.
+                        </p>
+                        <ul class="exp-bullets">
+                            <li>Engineered backend services in Python/Go, streamlining cryptographic key management and cutting processing time by 35%.</li>
+                            <li>Built RESTful APIs integrating quantum-safe libraries, reducing client integration timelines by 30%.</li>
+                            <li>Optimized data pipelines for certificate validation &mdash; &lt;500ms response times and 2&times; throughput.</li>
+                            <li>Partnered with cryptographers to operationalize hybrid (classical + quantum-safe) key exchange protocols.</li>
+                            <li>Built unit/integration testing framework, raising coverage above 90% and preventing 100+ regressions.</li>
+                        </ul>
+                        <div class="exp-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Go</span>
+                            <span class="tag">REST APIs</span>
+                            <span class="tag">Cryptography</span>
+                            <span class="tag">PKI</span>
+                        </div>
+                    </div>
+                </li>
+
+            </ol>
+        </div>
+    </section>
+
+    <section class="section" id="projects">
+        <div class="section-inner">
+            <div class="section-label reveal">
+                <span class="label-index">03</span>
+                <span class="label-text">projects</span>
+                <span class="label-hint">hover to explore</span>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- Project 1: Stock Valuation via Lobbying Data -->
+                <article class="project-card reveal">
+                    <div class="project-corner" aria-hidden="true"></div>
+
+                    <header class="project-head">
+                        <span class="project-index">/ 01</span>
+                        <span class="project-status status-shipped">
+                            <span class="status-dot"></span>shipped
+                        </span>
+                    </header>
+
+                    <h3 class="project-title">
+                        Stock Valuation via <span class="italic">Lobbying Data</span>
+                    </h3>
+
+                    <p class="project-tagline">
+                        Correlating political lobbying activity with equity price
+                        movements using ML.
+                    </p>
+
+                    <div class="project-stats">
+                        <div class="project-stat">
+                            <span class="stat-num">~70<span class="stat-unit">%</span></span>
+                            <span class="stat-label">predictive accuracy</span>
+                        </div>
+                        <div class="project-stat">
+                            <span class="stat-num">1<span class="stat-unit">k+</span></span>
+                            <span class="stat-label">filings ingested</span>
+                        </div>
+                    </div>
+
+                    <p class="project-body">
+                        Designed a data pipeline that scrapes federal lobbying
+                        disclosures and correlates them with historical stock
+                        valuation trends. Built ML models on the aggregated
+                        signal and prototyped a retail-facing platform to surface
+                        actionable insights.
+                    </p>
+
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">Scikit-learn</span>
+                        <span class="tag">Data Pipelines</span>
+                    </div>
+
+                    <footer class="project-footer">
+                        <span class="project-year">2022 &mdash; 2023</span>
+                        <div class="project-links">
+                            <a href="https://github.com/VishalVijay14" target="_blank" rel="noopener" class="project-link" aria-label="View on GitHub">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+                                    <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                                </svg>
+                                <span>repo</span>
+                            </a>
+                        </div>
+                    </footer>
+                </article>
+
+                <!-- Project 2: Coming Soon placeholder -->
+                <article class="project-card project-card--placeholder reveal" style="--delay: 0.15s">
+                    <div class="project-corner" aria-hidden="true"></div>
+
+                    <header class="project-head">
+                        <span class="project-index">/ 02</span>
+                        <span class="project-status status-wip">
+                            <span class="status-dot"></span>in progress
+                        </span>
+                    </header>
+
+                    <h3 class="project-title">
+                        <span class="italic">Coming</span> soon
+                    </h3>
+
+                    <p class="project-tagline">
+                        A new project is in the works. Check back shortly &mdash;
+                        or reach out if you want a sneak peek.
+                    </p>
+
+                    <div class="placeholder-glyph" aria-hidden="true">
+                        <div class="glyph-line"></div>
+                        <div class="glyph-line"></div>
+                        <div class="glyph-line"></div>
+                    </div>
+
+                    <div class="project-tags">
+                        <span class="tag tag-muted">TBA</span>
+                    </div>
+
+                    <footer class="project-footer">
+                        <span class="project-year">2026</span>
+                        <div class="project-links">
+                            <a href="mailto:vishvj04@berkeley.edu" class="project-link">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <rect x="3" y="5" width="18" height="14" rx="2"/>
+                                    <path d="m3 7 9 6 9-6"/>
+                                </svg>
+                                <span>ping me</span>
+                            </a>
+                        </div>
+                    </footer>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-contact" id="contact">
+        <div class="section-inner">
+            <div class="section-label reveal">
+                <span class="label-index">04</span>
+                <span class="label-text">contact</span>
+                <span class="label-hint">let's talk</span>
+            </div>
+
+            <div class="contact-wrap">
+                <!-- Big typographic statement -->
+                <h2 class="contact-headline reveal">
+                    Let's build
+                    <span class="italic">something</span>
+                    <br>
+                    worth shipping.
+                </h2>
+
+                <p class="contact-sub reveal" style="--delay: 0.1s">
+                    Open to full-time new-grad roles starting
+                    <span class="accent">May 2026</span> &mdash; software
+                    engineering, ML, or quant research. Always happy to
+                    chat about research, side projects, or a good problem.
+                </p>
+
+                <!-- Primary email block with copy-to-clipboard -->
+                <div class="email-block reveal" style="--delay: 0.2s">
+                    <div class="email-row">
+                        <span class="email-prefix">→</span>
+                        <a href="mailto:vishvj04@berkeley.edu" class="email-address" id="emailAddress">
+                            vishvj04@berkeley.edu
+                        </a>
+                        <button class="email-copy" id="emailCopy" type="button" aria-label="Copy email to clipboard">
+                            <svg class="icon-copy" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="9" y="9" width="13" height="13" rx="2"/>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                            </svg>
+                            <svg class="icon-check" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span class="copy-label">copy</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Channel cards -->
+                <div class="contact-channels">
+                    <a href="mailto:vishvj04@berkeley.edu" class="channel-card reveal" style="--delay: 0.3s">
+                        <div class="channel-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="3" y="5" width="18" height="14" rx="2"/>
+                                <path d="m3 7 9 6 9-6"/>
+                            </svg>
+                        </div>
+                        <div class="channel-body">
+                            <span class="channel-label">email</span>
+                            <span class="channel-handle">vishvj04@berkeley.edu</span>
+                        </div>
+                        <span class="channel-arrow" aria-hidden="true">↗</span>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/vishal-vijay-10541919a/" target="_blank" rel="noopener" class="channel-card reveal" style="--delay: 0.4s">
+                        <div class="channel-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.268 2.37 4.268 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.063 2.063 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </div>
+                        <div class="channel-body">
+                            <span class="channel-label">linkedin</span>
+                            <span class="channel-handle">/in/vishal-vijay</span>
+                        </div>
+                        <span class="channel-arrow" aria-hidden="true">↗</span>
+                    </a>
+
+                    <a href="https://github.com/VishalVijay14" target="_blank" rel="noopener" class="channel-card reveal" style="--delay: 0.5s">
+                        <div class="channel-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                            </svg>
+                        </div>
+                        <div class="channel-body">
+                            <span class="channel-label">github</span>
+                            <span class="channel-handle">@VishalVijay14</span>
+                        </div>
+                        <span class="channel-arrow" aria-hidden="true">↗</span>
+                    </a>
+                </div>
+
+                <!-- Meta row: availability + location -->
+                <div class="contact-meta reveal" style="--delay: 0.6s">
+                    <div class="meta-item">
+                        <span class="status-pulse"></span>
+                        <span class="meta-key">status</span>
+                        <span class="meta-val">available May 2026</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-dot-static"></span>
+                        <span class="meta-key">based in</span>
+                        <span class="meta-val">Berkeley, CA</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-dot-static"></span>
+                        <span class="meta-key">timezone</span>
+                        <span class="meta-val">PT (UTC−8)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <span class="footer-text">© 2026 Vishal Vijay</span>
+            <a href="#top" class="footer-top">back to top ↑</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
